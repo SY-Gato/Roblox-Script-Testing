@@ -3,7 +3,6 @@
 if not game:GetService("RunService"):IsClient() then error("Must be object type LocalScript") end
 if not script.Parent == game.ReplicatedFirst then error("Script must be in ReplicatedFirst") end
 
-local contentProvider = game:GetService("ContentProvider")
 local function CreateUi()
   local sgui = Instance.new("ScreenGui")
   local txtlabel = Instance.new("TextLabel")
@@ -16,3 +15,8 @@ local function CreateUi()
   txtlabel.Text = "0/0"
   return sgui
 end
+
+local contentProvider = game:GetService("ContentProvider")
+local ui = CreateUi()
+
+repeat wait() until game:IsLoaded()
