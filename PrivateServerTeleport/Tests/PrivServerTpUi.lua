@@ -29,5 +29,9 @@ effectui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 textforui.Size = UDim2.new(1,0,1,0)
 textforui.Name = "Text"
 textforui.Text = "Teleporting..."
+textforui.Parent = effectui
+textforui.BackgroundColor3 = Color3.fromRGB(30,30,30)
+textforui.TextColor3 = Color3.fromRGB(255,255,255)
 
-ts:TeleportToPrivateServer(id, code, totp)
+
+ts:TeleportToPrivateServer(id, code, totp, nil, nil, effectui)
