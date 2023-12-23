@@ -16,9 +16,11 @@ for i=1,#plrslist do
   end
 end
 
-print("plrlist: "..tostring(plrslist))
-print("totp: "..tostring(totp))
+--[[print("plrlist: "..tostring(plrslist))
+print("totp: "..tostring(totp))]]
 -- Create TransitionUi
-
+local effectui = Instance.new("ScreenGui")
+local textforui = Instance.new("TextLabel")
+effectui.IgnoreGuiInset
 
 ts:TeleportToPrivateServer(id, code, totp)
