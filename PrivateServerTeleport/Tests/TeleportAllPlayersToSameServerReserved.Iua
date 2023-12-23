@@ -5,3 +5,4 @@ local tpServ= game:GetService("TeleportService")
 local id = game.PlaceId
 
 local code = tpServ:ReserveServer()
+a
