@@ -1,7 +1,7 @@
 local plrstp = {}
 local plrsleft = {}
 local plrs = game:GetService("Players")
-local tpServ = game:GetService("TeleportService")
+local tpServ= game:GetService("TeleportService")
 local id = game.PlaceId
 
 local code = tpServ:ReserveServer()
