@@ -21,6 +21,13 @@ print("totp: "..tostring(totp))]]
 -- Create TransitionUi
 local effectui = Instance.new("ScreenGui")
 local textforui = Instance.new("TextLabel")
-effectui.IgnoreGuiInset
+effectui.Name = "TransitionUi"
+effectui.Parent = game.ReplicatedStorage
+effectui.ResetOnSpawn = false
+effectui.IgnoreGuiInset = true
+effectui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+textforui.Size = UDim2.new(1,0,1,0)
+textforui.Name = "Text"
+textforui.Text = "Teleporting..."
 
 ts:TeleportToPrivateServer(id, code, totp)
